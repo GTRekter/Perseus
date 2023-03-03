@@ -1,8 +1,8 @@
 ---
 title: "Sealed modifiers"
-date: 2023-03-03T02:09:16+09:00
-description: "Guide to emoji usage in Hugo"
-tags: ["NPM, Docker"]
+date: 2020-03-09T02:09:16+09:00
+description: "In this article, I will discuss what is a sealed modifier, how to use it and what’s its impact on your application’s performance."
+tags: ["CSharp", "Dotnet", "Web Development", "Software Development"]
 thumbnail: /sealed_modifiers/0.png
 ---
 

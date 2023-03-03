@@ -1,9 +1,9 @@
 ---
 title: "How to create a web application using NPM and Docker in 5 minutes or less"
-date: 2023-03-03T02:09:16+09:00
-description: "Guide to emoji usage in Hugo"
-tags: ["NPM, Docker"]
-thumbnail: /How_to_create_a_web_application_using_NPM_and_Docker_in_5_minutes_or_less/0.png
+date: 2020-03-09T02:09:16+09:00
+description: "In this article, I will show first how to build a Docker image and then download it from Docker Hub and use it to instantiate a new web application."
+tags: ["NPM", "Docker", "Web Development", "Software Development", "Containers"]
+thumbnail: /how_to_create_a_web_application_using_npm_and_docker_in_5_minutes_or_less/0.png
 ---
 
 In this article, I will show first how to build a Docker image and then download it from Docker Hub and use it to instantiate a new web application.
@@ -33,7 +33,7 @@ For this exercise, we will need to use the Docker platform. To do so we have to 
 3. Select the filter **Docker CE (CE stands for Community Edition)**
 4. Search for **Docker Desktop for Windows** and then install it
 
-![](/How_to_create_a_web_application_using_NPM_and_Docker_in_5_minutes_or_less/1.png)
+![](/how_to_create_a_web_application_using_npm_and_docker_in_5_minutes_or_less/1.png)
 
 
 ## Linux
@@ -43,7 +43,7 @@ For this exercise, we will need to use the Docker platform. To do so we have to 
 3. Select the filter **Docker CE (CE stand for Community Edition)**
 4. Search for **Docker Engine — Ubuntu (Community)** and then install it
 
-![](/How_to_create_a_web_application_using_NPM_and_Docker_in_5_minutes_or_less/2.png)
+![](/how_to_create_a_web_application_using_npm_and_docker_in_5_minutes_or_less/2.png)
 
 Once the installation is over (Windows users need to restart their machine before moving forward) check if everything went well by executing the command:
 
@@ -65,11 +65,11 @@ Let’s create a new folder (the place where we will put all files related to ou
     var express = require('express');
     var app = express();
     app.get('/', function(req, res) {
-    ++IAMASPACE++   res.send('<h1>Welcome to my Docker Tutorial</h1>');
+        res.send('<h1>Welcome to my Docker Tutorial</h1>');
     });
     app.get('/random', function(req, res) {
-    ++IAMASPACE++   var num = Math.floor(Math.random() * 3);
-    ++IAMASPACE++   res.send('<h1>My lucky number =  ' + num +'</h1>');
+          var num = Math.floor(Math.random() * 3);
+          res.send('<h1>My lucky number =  ' + num +'</h1>');
     });
     app.listen(8080);
     console.log("Running on port 8080");
@@ -103,19 +103,19 @@ Its execution will prompt you to make several inputs for a few aspects of the pr
     license: (ISC) ISC
     About to write to C:\Users\ivanp\Desktop\CoolWebsite\package.json:
     {
-    ++IAMASPACE++ "name": "coolwebsite",
-    ++IAMASPACE++ "version": "1.0.0",
-    ++IAMASPACE++ "description": "Docker tutorial",
-    ++IAMASPACE++ "main": "server.js",
-    ++IAMASPACE++ "scripts": {
-    ++IAMASPACE++   "test": "echo \"Error: no test specified\" && exit 1",
-    ++IAMASPACE++   "start": "node server.js"
-    ++IAMASPACE++ },
-    ++IAMASPACE++ "keywords": [
-    ++IAMASPACE++   "Docker"
-    ++IAMASPACE++ ],
-    ++IAMASPACE++ "author": "Ivan Porta",
-    ++IAMASPACE++ "license": "ISC"
+        "name": "coolwebsite",
+        "version": "1.0.0",
+        "description": "Docker tutorial",
+        "main": "server.js",
+        "scripts": {
+          "test": "echo \"Error: no test specified\" && exit 1",
+          "start": "node server.js"
+        },
+        "keywords": [
+          "Docker"
+        ],
+        "author": "Ivan Porta",
+        "license": "ISC"
     }Is this OK? (yes) yes
 ```
 
