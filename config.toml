@@ -6,7 +6,7 @@ languageCode = "en-us"
 # Enable comments by entering your Disqus shortname
 disqusShortname = ""
 googleAnalytics = "G-DB1P5NFWYC"
-ba_track_id  = "4677637567"
+ba_track_id  = ""
 preserveTaxonomyNames = true
 paginate = 5 #frontpage pagination
 hasCJKLanguage = true
