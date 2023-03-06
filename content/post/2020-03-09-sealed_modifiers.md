@@ -1,9 +1,15 @@
 ---
-title: "Sealed modifiers"
-date: 2020-03-09T02:09:16+09:00
+layout: post
+title: "How to create and configure your bot to work in Microsoft Teams"
+subtitle: ""
 description: "In this article, I will discuss what is a sealed modifier, how to use it and what’s its impact on your application’s performance."
+excerpt: ""
+date: 2020-03-09T02:09:16+09:00
+author: "Ivan Porta"
+image: ""
 tags: ["CSharp", "Dotnet", "Web Development", "Software Development"]
-thumbnail: /sealed_modifiers/0.png
+URL: "/2020/03/09/sealed_modifiers/"
+categories: [ Tech ]
 ---
 
 In this article, I will discuss what is a sealed modifier, how to use it and what’s its impact on your application’s performance.
@@ -14,9 +20,9 @@ First of all, let’s start with a definition; sealed is a modifier that, if it�
     public sealed class A { ... }
     public class B 
     {
-    ++IAMASPACE++   ...
-    ++IAMASPACE++   public sealed string Property { get; set; }
-    ++IAMASPACE++   public sealed void Method() { ... }
+       ...
+       public sealed string Property { get; set; }
+       public sealed void Method() { ... }
     }
 ```
 
@@ -26,16 +32,16 @@ An example of its usage is **specialized class/method or property**in which pote
     ...
     namespace System.Drawing
     {
-    ++IAMASPACE++   //
-    ++IAMASPACE++   // Summary:
-    ++IAMASPACE++   //     Pens for all the standard colors. This class cannot be inherited.
-    ++IAMASPACE++   public sealed class Pens
-    ++IAMASPACE++   {
-    ++IAMASPACE++       public static Pen Transparent { get; }
-    ++IAMASPACE++       public static Pen Orchid { get; }
-    ++IAMASPACE++       public static Pen OrangeRed { get; }
-    ++IAMASPACE++       ...
-    ++IAMASPACE++   }
+       //
+       // Summary:
+       //     Pens for all the standard colors. This class cannot be inherited.
+       public sealed class Pens
+       {
+           public static Pen Transparent { get; }
+           public static Pen Orchid { get; }
+           public static Pen OrangeRed { get; }
+           ...
+       }
     }
 ```
 
@@ -49,26 +55,26 @@ Using as reference for our test the following code, let’s analyze the **Micros
 ```bash
     public sealed class Sealed
     {
-    ++IAMASPACE++   public string Message { get; set; }
-    ++IAMASPACE++   public void DoStuff() { }
+       public string Message { get; set; }
+       public void DoStuff() { }
     }
     public class Derived : Base
     {
-    ++IAMASPACE++   public sealed override void DoStuff() { }
+       public sealed override void DoStuff() { }
     }
     public class Base
     {
-    ++IAMASPACE++   public string Message { get; set; }
-    ++IAMASPACE++   public virtual void DoStuff() { }
+       public string Message { get; set; }
+       public virtual void DoStuff() { }
     }
     static void Main()
     {
-    ++IAMASPACE++   Sealed sealedClass = new Sealed();
-    ++IAMASPACE++   sealedClass.DoStuff();
-    ++IAMASPACE++   Derived derivedClass = new Derived();
-    ++IAMASPACE++   derivedClass.DoStuff();
-    ++IAMASPACE++   Base BaseClass = new Base();
-    ++IAMASPACE++   BaseClass.DoStuff();
+       Sealed sealedClass = new Sealed();
+       sealedClass.DoStuff();
+       Derived derivedClass = new Derived();
+       derivedClass.DoStuff();
+       Base BaseClass = new Base();
+       BaseClass.DoStuff();
     }
 ```
 
@@ -91,16 +97,16 @@ Double click on the Main method to view the Microsoft intermediate language (MSI
 ```bash
     .method private hidebysig static void  Main() cil managed
     {
-    ++IAMASPACE++ .entrypoint
-    ++IAMASPACE++ // Code size       41 (0x29)
-    ++IAMASPACE++ .maxstack  8
-    ++IAMASPACE++ IL_0000:  newobj     instance void ConsoleApp1.Program/Sealed::.ctor()
-    ++IAMASPACE++ IL_0005:  callvirt   instance void ConsoleApp1.Program/Sealed::DoStuff()
-    ++IAMASPACE++ IL_000a:  newobj     instance void ConsoleApp1.Program/Derived::.ctor()
-    ++IAMASPACE++ IL_000f:  callvirt   instance void ConsoleApp1.Program/Base::DoStuff()
-    ++IAMASPACE++ IL_0014:  newobj     instance void ConsoleApp1.Program/Base::.ctor()
-    ++IAMASPACE++ IL_0019:  callvirt   instance void ConsoleApp1.Program/Base::DoStuff()
-    ++IAMASPACE++ IL_0028:  ret
+     .entrypoint
+     // Code size       41 (0x29)
+     .maxstack  8
+     IL_0000:  newobj     instance void ConsoleApp1.Program/Sealed::.ctor()
+     IL_0005:  callvirt   instance void ConsoleApp1.Program/Sealed::DoStuff()
+     IL_000a:  newobj     instance void ConsoleApp1.Program/Derived::.ctor()
+     IL_000f:  callvirt   instance void ConsoleApp1.Program/Base::DoStuff()
+     IL_0014:  newobj     instance void ConsoleApp1.Program/Base::.ctor()
+     IL_0019:  callvirt   instance void ConsoleApp1.Program/Base::DoStuff()
+     IL_0028:  ret
     } // end of method Program::Main
 ```
 As you can see each class use **newobj**to create a new instance by pushing an object reference onto the stack and **callvirt**to calls a late-bound of the DoStuff() method of its respective object.
@@ -115,7 +121,7 @@ Set a brake-point at the beginning of the application and start the debug. Once 
 
 ```bash
     --- C:\Users\Ivan Porta\source\repos\ConsoleApp1\Program.cs --------------------
-    ++IAMASPACE++       {
+           {
     0066084A  in          al,dx  
     0066084B  push        edi  
     0066084C  push        esi  
@@ -137,7 +143,7 @@ Set a brake-point at the beginning of the application and start the debug. Once 
     0066087A  xor         edx,edx  
     0066087C  mov         dword ptr [ebp-40h],edx  
     0066087F  nop  
-    ++IAMASPACE++           Sealed sealedClass = new Sealed();
+               Sealed sealedClass = new Sealed();
     00660880  mov         ecx,584E1Ch  
     00660885  call        005730F4  
     0066088A  mov         dword ptr [ebp-4Ch],eax  
@@ -145,12 +151,12 @@ Set a brake-point at the beginning of the application and start the debug. Once 
     00660890  call        00660468  
     00660895  mov         eax,dword ptr [ebp-4Ch]  
     00660898  mov         dword ptr [ebp-3Ch],eax  
-    ++IAMASPACE++           sealedClass.DoStuff();
+               sealedClass.DoStuff();
     0066089B  mov         ecx,dword ptr [ebp-3Ch]  
     0066089E  cmp         dword ptr [ecx],ecx  
     006608A0  call        00660460  
     006608A5  nop  
-    ++IAMASPACE++           Derived derivedClass = new Derived();
+               Derived derivedClass = new Derived();
     006608A6  mov         ecx,584F3Ch  
     006608AB  call        005730F4  
     006608B0  mov         dword ptr [ebp-50h],eax  
@@ -158,13 +164,13 @@ Set a brake-point at the beginning of the application and start the debug. Once 
     006608B6  call        006604A8  
     006608BB  mov         eax,dword ptr [ebp-50h]  
     006608BE  mov         dword ptr [ebp-40h],eax  
-    ++IAMASPACE++           derivedClass.DoStuff();
+               derivedClass.DoStuff();
     006608C1  mov         ecx,dword ptr [ebp-40h]  
     006608C4  mov         eax,dword ptr [ecx]  
     006608C6  mov         eax,dword ptr [eax+28h]  
     006608C9  call        dword ptr [eax+10h]  
     006608CC  nop  
-    ++IAMASPACE++           Base BaseClass = new Base();
+               Base BaseClass = new Base();
     006608CD  mov         ecx,584EC0h  
     006608D2  call        005730F4  
     006608D7  mov         dword ptr [ebp-54h],eax  
@@ -172,13 +178,13 @@ Set a brake-point at the beginning of the application and start the debug. Once 
     006608DD  call        00660490  
     006608E2  mov         eax,dword ptr [ebp-54h]  
     006608E5  mov         dword ptr [ebp-44h],eax  
-    ++IAMASPACE++           BaseClass.DoStuff();
+               BaseClass.DoStuff();
     006608E8  mov         ecx,dword ptr [ebp-44h]  
     006608EB  mov         eax,dword ptr [ecx]  
     006608ED  mov         eax,dword ptr [eax+28h]  
     006608F0  call        dword ptr [eax+10h]  
     006608F3  nop  
-    ++IAMASPACE++       }
+           }
     0066091A  nop  
     0066091B  lea         esp,[ebp-0Ch]  
     0066091E  pop         ebx  

@@ -1,10 +1,17 @@
 ---
+layout: post
 title: "What is the difference between String and StringBuilder?"
-date: 2020-06-18T02:09:16+09:00
+subtitle: ""
 description: "Difference between the String and StringBuilder is an important concept that makes the difference when an application has to deal with the editing of a high number of Strings..."
+excerpt: ""
+date: 2020-06-18T02:09:16+09:00
+author: "Ivan Porta"
+image: ""
 tags: ["CSharp", "Dotnet", "Web Development", "Software Development"]
-thumbnail: /what_is_the_difference_between_string_and_stringbuilder/0.png
+URL: "/2020/06/18/what_is_the_difference_between_string_and_stringbuilder/"
+categories: [ Tech ]
 ---
+
 
 Difference between the **String**and **StringBuilder**is an important concept that makes the difference when an application has to deal with the editing of a high number of Strings.
 

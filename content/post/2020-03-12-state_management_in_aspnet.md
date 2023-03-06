@@ -1,9 +1,15 @@
 ---
+layout: post
 title: "State Management in ASP.NET"
-date: 2020-03-12T02:09:16+09:00
+subtitle: ""
 description: "Whenever you visit a web application, your browser will communicate with the respective server through HTTP or HTTPs protocol, but because its stateless nature, if you visit the same web application again after closing the web browser, there will be no trace of your previous visit..."
+excerpt: ""
+date: 2020-03-12T02:09:16+09:00
+author: "Ivan Porta"
+image: ""
 tags: ["CSharp", "Dotnet", "Web Development", "Software Development"]
-thumbnail: /state_management_in_aspnet/0.png
+URL: "/2020/03/12/state_management_in_aspnet/"
+categories: [ Tech ]
 ---
 
 Whenever you visit a web application, your browser will communicate with the respective server through HTTP or HTTPs protocol, but because its stateless nature, if you visit the same web application again after closing the web browser, there will be no trace of your previous visit.

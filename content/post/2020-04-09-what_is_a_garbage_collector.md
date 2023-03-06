@@ -1,9 +1,15 @@
 ---
+layout: post
 title: "What is a garbage collector?"
-date: 2020-04-09T02:09:16+09:00
+subtitle: ""
 description: "The garbage collector (GC) is a part of the .NET framework which is initialized by the common language run-time (CLR) to manage the allocation and release of memory in an application..."
+excerpt: ""
+date: 2020-04-09T02:09:16+09:00
+author: "Ivan Porta"
+image: ""
 tags: ["CSharp", "Dotnet", "Web Development", "Software Development"]
-thumbnail: /what_is_a_garbage_collector/0.png
+URL: "/2020/04/09/what_is_a_garbage_collector/"
+categories: [ Tech ]
 ---
 
 The garbage collector (GC) is a part of the .NET framework which is initialized by the common language run-time (CLR) to manage the allocation and release of memory in an application.

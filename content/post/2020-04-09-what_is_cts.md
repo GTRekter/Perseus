@@ -1,9 +1,15 @@
 ---
+layout: post
 title: "What is CTS?"
-date: 2020-04-09T02:09:16+09:00
+subtitle: ""
 description: ".NET is language-agnostic, which allows programmers to write code in different languages (which can be compiled to IL), and that code can interact with other code written in different languages..."
+excerpt: ""
+date: 2020-04-09T02:09:16+09:00
+author: "Ivan Porta"
+image: ""
 tags: ["CSharp", "Dotnet", "Web Development", "Software Development"]
-thumbnail: /what_is_cts/0.png
+URL: "/2020/04/09/what_is_cts/"
+categories: [ Tech ]
 ---
 
 .NET is **language-agnostic**, which allows programmers to write code in different languages (which can be compiled to IL), and that code can interact with other code written in different languages.

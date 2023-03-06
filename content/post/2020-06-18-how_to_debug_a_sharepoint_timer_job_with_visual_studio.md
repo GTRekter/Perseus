@@ -1,9 +1,15 @@
 ---
+layout: post
 title: "How to debug a SharePoint timer job with Visual Studio"
-date: 2020-06-1802:09:16+09:00
+subtitle: ""
 description: "Timer jobs are an effective solution to handle a situation where a specific process needs to run periodically. The following steps describe how to debug a Microsoft SharePoint 2010 timer job using Visual Studio."
+excerpt: ""
+date: 2020-06-1802:09:16+09:00
+author: "Ivan Porta"
+image: ""
 tags: ["SharePoint","Troubleshooting", "Visual Studio"]
-thumbnail: /how_to_debug_a_sharepoint_timer_job_with_visual_studio/0.png
+URL: "/2020/06/18/how_to_debug_a_sharepoint_timer_job_with_visual_studio/"
+categories: [ Tech ]
 ---
 
 Timer jobs are an effective solution to handle a situation where a specific process needs to run periodically. The following steps describe how to debug a Microsoft SharePoint 2010 timer job using Visual Studio.

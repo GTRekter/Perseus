@@ -1,9 +1,15 @@
 ---
+layout: post
 title: "Partial classes and methods"
-date: 2020-06-18T02:09:16+09:00
+subtitle: ""
 description: "In this article, I’m going to explain what partial classes and partial methods are, and how to implement them in C#."
+excerpt: ""
+date: 2020-06-18T02:09:16+09:00
+author: "Ivan Porta"
+image: ""
 tags: ["CSharp", "Dotnet", "Web Development", "Software Development"]
-thumbnail: /partial_classes_and_methods/0.png
+URL: "/2020/06/18/partial_classes_and_methods/"
+categories: [ Tech ]
 ---
 
 In this article, I’m going to explain what partial classes and partial methods are, and how to implement them in C#.

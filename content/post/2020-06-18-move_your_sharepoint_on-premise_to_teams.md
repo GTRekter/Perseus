@@ -1,9 +1,15 @@
 ---
+layout: post
 title: "Move your SharePoint On-Premise to Teams"
-date: 2020-06-18T02:09:16+09:00
+subtitle: ""
 description: "With the Covid-19 pandemic, remote working has become a must more than a luxury. Many companies decided to adopt Microsoft Teams as a collaboration software between its employees, and others even moved part of their infrastructure to it. This article will explain how Microsoft Teams works and the relationship between it and SharePoint Online..."
+excerpt: ""
+date: 2020-06-18T02:09:16+09:00
+author: "Ivan Porta"
+image: ""
 tags: ["SharePoint","Office 365", "Powershell"]
-thumbnail: /move_your_sharepoint_on-premise_to_teams/0.png
+URL: "/2020/06/18/move_your_sharepoint_on-premise_to_teams/"
+categories: [ Tech ]
 ---
 
 With the Covid-19 pandemic, remote working has become a must more than a luxury. Many companies decided to adopt Microsoft Teams as a collaboration software between its employees, and others even moved part of their infrastructure to it. This article will explain how Microsoft Teams works and the relationship between it and SharePoint Online.

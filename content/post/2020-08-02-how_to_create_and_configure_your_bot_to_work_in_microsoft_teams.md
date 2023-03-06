@@ -1,9 +1,15 @@
 ---
+layout: post
 title: "How to create and configure your bot to work in Microsoft Teams"
-date: 2020-08-02T02:09:16+09:00
+subtitle: ""
 description: "This article is a step-by-step guide on how to create a Bot from scratch using Microsoft Bot Framework and how to configure it to work with Microsoft Teams."
+excerpt: ""
+date: 2020-08-02T02:09:16+09:00
+author: "Ivan Porta"
+image: ""
 tags: ["CSharp", "Bots", "Microsoft Teams", "Software Development"]
-thumbnail: /how_to_create_and_configure_your_bot_to_work_in_microsoft_teams/0.png
+URL: "/2020/08/02/how_to_create_and_configure_your_bot_to_work_in_microsoft_teams/"
+categories: [ Tech ]
 ---
 
 This article is a step-by-step guide on how to create a Bot from scratch using Microsoft Bot Framework and how to configure it to work with Microsoft Teams.

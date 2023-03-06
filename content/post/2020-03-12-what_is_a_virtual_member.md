@@ -1,9 +1,15 @@
 ---
+layout: post
 title: "What is a virtual member?"
-date: 2020-03-12T02:09:16+09:00
+subtitle: ""
 description: "We can’t talk about virtual members without referring to polymorphism. In fact, a function, property, indexer or event in a base class marked as virtual will allow override from a derived class..."
+excerpt: ""
+date: T02:09:16+09:00
+author: "Ivan Porta"
+image: ""
 tags: ["CSharp", "Dotnet", "Web Development", "Software Development"]
-thumbnail: /what_is_a_virtual_member/0.png
+URL: "/2020/03/12/what_is_a_virtual_member/"
+categories: [ Tech ]
 ---
 
 We can’t talk about virtual members without referring to polymorphism. In fact, a function, property, indexer or event in a base class marked as virtual will allow override from a derived class. By default, members of a class are non-virtual and cannot be marked as that if static, abstract, private, or override modifiers.

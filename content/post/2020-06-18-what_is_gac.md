@@ -1,9 +1,15 @@
 ---
+layout: post
 title: "What is GAC?"
-date: 2020-06-18T02:09:16+09:00
+subtitle: ""
 description: "The Global Assembly Cache (GAC) is a local cache maintained by the .NET Framework where strong-named assemblies (their name is composed by: name of assembly, version number, culture and public key token) that are designated to be shared by all the applications executed on a system will be stored..."
+excerpt: ""
+date: 2020-06-18T02:09:16+09:00
+author: "Ivan Porta"
+image: ""
 tags: ["CSharp", "Dotnet", "Web Development", "Software Development"]
-thumbnail: /what_is_gac/0.png
+URL: "/2020/06/18/what_is_gac/"
+categories: [ Tech ]
 ---
 
 The Global Assembly Cache (GAC) is a local cache maintained by the .NET Framework where strong-named assemblies (their name is composed by: name of assembly, version number, culture and public key token) that are designated to be shared by all the applications executed on a system will be stored.

@@ -1,9 +1,15 @@
 ---
+layout: post
 title: "What is DevOps and how to implement it in your organization using Microsoft"
-date: 2020-05-23T02:09:16+09:00
+subtitle: ""
 description: "DevOps is a hot topic today, but ask someone what it actually is and you’ll hear crickets. According to research conducted by Gartner, a global research and advisory firm in the United States, 90% of interviewed organizations describe themselves as DevOps..."
+excerpt: ""
+date: 2020-05-23T02:09:16+09:00
+author: "Ivan Porta"
+image: ""
 tags: ["Office 365", "DevOps", "Microsoft Teams", "Azure"]
-thumbnail: /what_is_devops_and_how_to_implement_it_in_your_organization_using_microsoft/0.png
+URL: "/2020/05/23/what_is_devops_and_how_to_implement_it_in_your_organization_using_microsoft/"
+categories: [ Tech ]
 ---
 
 _“DevOps is the union of people, processes, and products to enable continuous delivery of value to end-users.”_
