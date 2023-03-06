@@ -8,7 +8,7 @@ date: 2020-03-10T02:09:16+09:00
 author: "Ivan Porta"
 image: ""
 tags: ["CSharp", "Dotnet", "Web Development", "Software Development"]
-URL: "/2020/03/10/data_types_and_memory_management_in_csharp/images/"
+URL: "/2020/03/10/data_types_and_memory_management_in_csharp/"
 categories: [ Tech ]
 ---
 
