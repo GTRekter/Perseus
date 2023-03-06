@@ -1,5 +1,5 @@
-baseurl = "https://zhaohuabing.com"
-title = "Ivan Blog"
+baseurl = "https://ivanporta.net"
+title = "Hi, I'm Ivan"
 theme = "hugo-theme-cleanwhite"
 languageCode = "en-us"
 
@@ -15,7 +15,8 @@ hasCJKLanguage = true
 home = ["HTML", "RSS", "Algolia"]
 
 [params]
-  header_image = "home-bg-jeep.jpg"
+  nav_title = "Ivan Porta"
+  header_image = "home-bg.jpg"
   SEOTitle = "Ivan Porta | Personal Blog"
   description = "Personal blog to keep professionals prepared to embrace innovation and ready to build a better future."
   keyword = "DevOps, Azure, Continuous Integration, Continuous Delivery, Pipelines, GitHub, GitHub Actions, Tech, Office, SharePoint, Web, Software Development, PaaS, Istio, Kubernetes, Cloud, Microservice"
