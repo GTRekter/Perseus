@@ -1,5 +1,5 @@
 baseurl = "https://ivanporta.net"
-title = "Hi, I'm Ivan"
+title = "Ivan Porta"
 theme = "hugo-theme-cleanwhite"
 languageCode = "en-us"
 
@@ -15,7 +15,7 @@ hasCJKLanguage = true
 home = ["HTML", "RSS", "Algolia"]
 
 [params]
-  nav_title = "Ivan Porta"
+  head_title = "Hi, I'm Ivan"
   header_image = "home-bg.jpg"
   SEOTitle = "Ivan Porta | Microsoft Certified DevOps Engineer Expert | MCT | Public Speaker"
   description = "Personal blog to keep professionals prepared to embrace innovation and ready to build a better future."
