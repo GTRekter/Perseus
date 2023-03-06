@@ -15,7 +15,6 @@ hasCJKLanguage = true
 home = ["HTML", "RSS", "Algolia"]
 
 [params]
-  description = "Ever since I was a little kid, technology has been a fundamental part of my life. After studying Computer Science, my hunger and curiosity made me complete multiple college certifications at MIT and UCSD on Cloud Computing and C# programming. During my career, I worked for numerous consultancy and fintech companies worldwide, and since 2021 I am working as a Customer Engineer at Microsoft. In addition to my work required duties, I am also an active member of the development community. I periodically write articles, reply to StackOverflow questions, and conduct live workshops and keynotes for international audiences on topics like Azure, DevOps, and coding best practices."
   nav_title = "Ivan Porta"
   header_image = "home-bg.jpg"
   SEOTitle = "Ivan Porta | Microsoft Certified DevOps Engineer Expert | MCT | Public Speaker"
