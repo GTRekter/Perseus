@@ -28,5 +28,5 @@ Feel free to connect Huabing at Github and Linkedin, leave your thoughts in his 
 ## Open Source Projects
 |Project      |Role        |  Website   | GitHub     |
 | ----------- |----------- |----------- |----------- |
-| Metis | Creator | https://aeraki.net  | https://github.com/GTRekter/Metis |
+| Metis | Creator | https://orange-field-067ae0b00.2.azurestaticapps.net  | https://github.com/GTRekter/Metis |
 | Hypnos | Creator | http://virtualbreaks.net | https://github.com/GTRekter/Hypnos |
